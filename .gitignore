@@ -1,0 +1,14 @@
+__pycache__/
+/.idea
+
+# from build
+build/
+*.egg-info/
+dist/
+
+# Ignore temporary tox and pytest environments
+.tox/
+.pytest_cache/
+
+#
+.env
