@@ -1,10 +1,10 @@
 import pytest
 from rest_framework.reverse import reverse
 
+pytestmark = pytest.mark.django_db
 
-@pytest.mark.django_db()
 def test_samples(client):
     url = reverse(
-        'SampleViewSet-list'
+        'books-list'
     )
     client.get(url).content

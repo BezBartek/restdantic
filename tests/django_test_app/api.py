@@ -1,12 +1,12 @@
 from rest_framework import mixins
 from rest_framework.viewsets import GenericViewSet
 
-from tests.django_test_app.models import SampleModel
-from tests.django_test_app.serializers import SampleSerializer
+from tests.django_test_app.models import Book
+from tests.django_test_app.serializers import BookSerializer
 
 
-class SampleViewSet(mixins.ListModelMixin, GenericViewSet):
-    serializer_class = SampleSerializer
+class BookViewSet(mixins.ListModelMixin, GenericViewSet):
+    serializer_class = BookSerializer
 
     def get_queryset(self):
-        return SampleModel.objects.all()
+        return Book.objects.all()
