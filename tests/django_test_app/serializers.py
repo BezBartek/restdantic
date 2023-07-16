@@ -1,5 +1,5 @@
 from rest_framework import serializers
 
 
-class SampleSerializer(serializers.Serializer):
+class BookSerializer(serializers.Serializer):
     id = serializers.IntegerField()

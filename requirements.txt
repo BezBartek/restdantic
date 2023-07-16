@@ -2,5 +2,5 @@ django>=2.*,<=4.2
 pytest-django==4.5.2
 pytest-mock==3.8.2
 tox==3.25.1
-pydantic==1.10.7
+pydantic==2.0a4
 djangorestframework>=3.12
